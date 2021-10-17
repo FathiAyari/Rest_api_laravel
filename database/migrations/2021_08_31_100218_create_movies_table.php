@@ -17,7 +17,7 @@ class CreateMoviesTable extends Migration
             $table->id();
             $table->timestamps();
             $table->String('title');
-            $table->String('description');
+            $table->integer('score');
         });
     }
 

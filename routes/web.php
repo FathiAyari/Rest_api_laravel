@@ -2,6 +2,8 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Moviecontroller;
+use App\Http\Controllers\testController;
+
 use App\Models\Movies;
 
 /*
@@ -30,6 +32,7 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name
 
 
 
+
 Route::get('/test', function () {
     
     $title=request('title');
@@ -43,3 +46,9 @@ Route::get('/test', function () {
     }
     
 });
+
+Route::get('/lorem/{id}', function ($id) {
+    return $id
+    ;
+});
+Route::get('/try/{id}', [App\Http\Controllers\testController::class, 'index'])->name('home');

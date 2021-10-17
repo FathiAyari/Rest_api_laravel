@@ -31,7 +31,7 @@ Route::get('/test', function () {
     }elseif($title==null){
         return json_encode(["empty"]);
         
-    }else {
+    }else { 
         return json_encode(["no data"]);
         
     }
