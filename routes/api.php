@@ -29,7 +29,7 @@ Route::get('/test', function () {
     if (count($movies) !=0) {
         return response()->json($movies);
     }elseif($title==null){
-        return json_encode(["empty"]);
+        return json_encode(["empty2"]);
         
     }else { 
         return json_encode(["no data"]);
