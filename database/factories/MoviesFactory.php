@@ -21,9 +21,11 @@ class MoviesFactory extends Factory
      */
     public function definition()
     {
+         $cId = rand(1, 15);g
         return [
             'title'=>$this->faker->title(),
-            'description' => $this->faker ->text(50),
+            'score' => $this->faker->unique()->numberBetween(1, 20)
+,
         ];
     }
 }
