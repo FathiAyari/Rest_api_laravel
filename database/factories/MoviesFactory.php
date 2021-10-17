@@ -24,7 +24,7 @@ class MoviesFactory extends Factory
          $cId = rand(1, 15);
         return [
             'title'=>$this->faker->title(),
-            'score' => $this->faker->unique()->numberBetween(1, 20)
+            'score' => $this->faker->unique()->numberBetween(1, 30)
 ,
         ];
     }
