@@ -32,7 +32,7 @@ Route::get('/test', function () {
         return json_encode(["empty2"]);
         
     }else { 
-        return json_encode(["no data"]);
+        return json_encode(["no data 0"]);
         
     }
     
